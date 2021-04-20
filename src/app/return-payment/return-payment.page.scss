@@ -1,0 +1,63 @@
+*{
+    font-family: 'Poppins', arial;
+}
+ion-toolbar{
+    --background: none;
+    background-color: #0555B6;
+    height: 4rem;
+    
+
+    ion-icon{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+}
+ion-title{
+    margin-top: 1rem;
+    
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+}
+ion-content{
+    --background: none;
+    background-color: #FFFFFF;
+}
+.logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top: 6rem;
+  }
+
+.wallet-logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    width: 90%;
+}
+.wallet-logo h1{
+    text-align: center;
+    color: #0555B6;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.wallet-logo p{
+    text-align: center;
+    color: #000;
+}
+.wallet-logo ion-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: #0555B6;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    border-radius: 5px;
+}

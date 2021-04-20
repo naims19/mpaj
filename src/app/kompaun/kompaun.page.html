@@ -1,0 +1,56 @@
+<ion-app>
+  <!-- font-link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- header -->
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back-outline" routerLink="/home"></ion-icon>
+      <ion-title>KOMPAUN</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- apps content -->
+  <ion-content >
+    <!-- ayat senarai cukai dan btn -->
+    <div class="tambah">
+      <p>Berikut adalah senarai kompaun tuan/puan. Kompaun yang telah berjaya
+         dibuat bayaran tidak akan dipamerkan di dalam ruang di bawah.
+      </p>
+      <ion-button fill="clear" (click)="CreatePrompt()">
+        <ion-icon slot="start" name="add-outline" ></ion-icon>
+        TAMBAH KENDERAAN
+      </ion-button>
+    </div>
+    <!-- senarai akaun -->
+    <div class="akaun">
+      <ion-card>
+        <p>No. Akaun</p>
+        <h4>2004028843</h4>
+
+        <p>Nombor Kenderaan</p>
+        <h4>ABC 1234</h4>
+
+        <p>Kesalahan</p>
+        <h4>11088 - GAGAL/ENGGAN MEMBUAT PEMBAYARAN TEMPAT
+          LETAK KERETA
+        </h4>
+
+        <p>Tarikh</p>
+        <h4>01/01/2020</h4>
+
+        <p>Jumlah</p>
+        <h4>RM 50</h4>
+
+      </ion-card>
+    </div>
+
+    <!-- btn -->
+    <div class="btn">
+      <ion-button fill="clear" style="background-color: #05B613; color: #fff;" routerLink="/kompaun-payment">
+        BAYAR
+      </ion-button>
+    </div>
+  </ion-content>
+</ion-app>
+

@@ -1,0 +1,47 @@
+<ion-app>
+  <!-- font-link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- header -->
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back-outline" routerLink="/taksiran-payment"></ion-icon>
+      <ion-title>Bayaran Kompaun</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- apps content -->
+  <ion-content >
+    <!-- logo -->
+    <div class="logo">
+      <img src="assets/media/logo.png" alt="" srcset="">
+    </div>
+    <!-- fpx logo -->
+    <div class="fpx-logo ion-text-centre">
+      <p>Internet Banking <img src="assets/media/fpx.png" alt="" srcset=""></p>
+    </div>
+    <div class="bayaran">
+      <h2>Bayaran Taksiran</h2>
+      <p class="proses">Selesaikan proses pembayaran sehingga memperolehi resit MPAJ.
+         Hubungi MPAJ di 03-42857141 untuk sebarang bantuan.</p>
+      <p style="font-weight: 600;">Emel :</p>
+      <p style="font-weight: 600;">Nama :</p>
+      <p style="font-weight: 600;">Amaun :</p>
+      <p style="font-weight: 600;">Bank :</p>
+
+      <ul>
+        <li><ion-checkbox></ion-checkbox>
+          <ion-label>Saya telah meneliti dan bersetuju dengan Terma dan Syarat,
+             serta dengan meneruskan bayaran ini bermakna saya telah mengesahkan
+              bahawa semua perincian di atas adalah betul dan tepat.</ion-label></li>
+      </ul>
+
+      <ion-button expand="block" fill="clear" shape="round" routerLink="/return-payment">
+        Bayar
+      </ion-button>
+      <br>
+    </div>
+    <br>
+  </ion-content>
+</ion-app>
+

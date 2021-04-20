@@ -1,20 +1,77 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-app>
+  <!-- font-link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <ion-header class="ion-no-border">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <!-- icon -->
+      <ion-icon slot="start" name="notifications" routerLink="/inbox"></ion-icon>
+      <ion-icon slot="end" name="person"></ion-icon>
     </ion-toolbar>
   </ion-header>
+  <ion-content>
+    <!-- mpaj logo -->
+    <div class="logo">
+      <img src="assets/media/logo.png" alt="" srcset="">
+    </div>
+    <!-- <ion-list>
+      
+          <ion-row class="ion-justify-content-center" style="height: 50%;">
+            <h1>test</h1>
+          </ion-row>
+          <ion-row class="ion-padding-horizontal">
+            <h1>test</h1>
+          </ion-row>
+          <ion-row class="ion-padding-horizontal">
+            <h1>test</h1>
+          </ion-row>
+    </ion-list> -->
+    <ion-list>
+      <ion-item class="taksiran" routerLink="/taksiran" lines="none">
+        <img src="assets/media/taksiran.png" style="margin-top: -5rem;">
+        <div class="word">
+          <h1>Semakan dan Pembayaran Taksiran</h1>
+          <p>Semak dan Bayar Cukai Taksiran di atas talian! Anda boleh 
+            melihat bil serta penyata terkini, dan membuat pembayaran di atas talian.</p>
+        </div>
+      </ion-item>
+      <ion-item class="kompaun" lines="none" routerLink="/kompaun">
+        <img src="assets/media/kompaun.png" style="margin-top: -5rem;">
+        <div class="word">
+          <h1>Semakan dan Pembayaran Kompaun</h1>
+          <p>Semak dan bayar kompaun trafik. Hanya perlu memasukkan nombor pendaftaran 
+            kenderaan untuk menyemak sekiranya anda mempunyai kompaun trafik.</p>
+        </div>
+      </ion-item>
+      <ion-item class="dewan" lines="none" routerLink="/dewan">
+        <img src="assets/media/dewan.png" style="margin-top: -5rem;">
+        <div class="word">
+          <h1>Tempahan Dewan</h1>
+          <p>Tempahan dewan untuk tujuan badminton kini boleh dilakukan di atas talian. 
+            Tempahan dewan dibuka 2 bulan lebih awal, tempahan adalah berdasarkan siapa 
+            dahulu dia dapat.</p>
+        </div>
+        
+      </ion-item>
+      <ion-item class="transport" lines="none">
+        <img src="assets/media/transport.png" style="margin-top: -2.2rem;">
+        <div class="word">
+          <h1>Smart Selangor Transportation</h1>
+          <p>Kemudahan dihujung jari untuk anda mendapatkan bantuan navigasi dan senarai
+             pengangkutan awam di Selangor</p>
+        </div>
+      </ion-item>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+      <ion-item class="kedai" lines="none">
+        <img src="assets/media/kedai.png" style="margin-top: -1.9rem;">
+        <div class="word">
+          <h1>Kedai Online</h1>
+          <p>Platform marketplace untuk warga Selangor memasarkan produk
+             secara online dan juga membeli belah secara online</p>
+        </div>
+      </ion-item>
+    </ion-list>
+    
+  </ion-content>
+</ion-app>
+

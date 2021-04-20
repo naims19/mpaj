@@ -1,27 +1,95 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+*{
+  font-family: 'Poppins', arial;
   margin: 0;
 }
+ion-toolbar{
+  --background: none;
+  background-color: #ffff;
+  height: 4rem;
+  
 
-#container a {
-  text-decoration: none;
+  ion-icon{
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: 1.8rem;
+      margin-top: 1rem;
+      font-weight: 600;
+      color: #0555B6;
+  }
+}
+ion-title{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+ion-content{
+  --background: none;
+  background-color: #ffff;
+}
+ion-list{
+  --background: none;
+  background-color: #ffff;
+}
+
+.logo img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.taksiran{
+  background-color: #f1f9ff;
+  height: 23%;
+  
+}
+.kompaun{
+  // margin-top: -1.3rem;
+  background-color: #ffff;
+  height: 23%;
+}
+.dewan{
+  // margin-top: -1.3rem;
+  background-color: #f1f9ff;
+  height: 23%;
+}
+.transport{
+  // margin-top: -1.3rem;
+  background-color: #ffff;
+  height: 23%;
+}
+.kedai{
+  // margin-top: -1.3rem;
+  background-color: #f1f9ff;
+  height: 23%;
+}
+ion-item{
+  --background: none;
+  margin-right: 0.5rem;
+}
+ion-item h1{
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  color: #0555B6;
+  font-weight: bold;
+  font-family: 'Montserrat', arial;
+}
+ion-item p{
+  margin-top: -0.5rem;
+  margin-left: 0.5rem;
+}
+ion-item img{
+  width: 18%;
+  
+}
+ion-list{
+  --background: none;
+  background-color: #f0f9ff;
+  margin-top: 1.5rem;
+}
+.word p{
+  padding-top: 1rem;
+  color: #6E6E6E;
+  font-size: 1rem;
+  text-align: justify;
 }

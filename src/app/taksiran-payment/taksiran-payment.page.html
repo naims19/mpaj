@@ -1,0 +1,41 @@
+<ion-app>
+  <!-- font-link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- header -->
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back-outline" routerLink="/taksiran"></ion-icon>
+      <ion-title>TAKSIRAN - PEMBAYARAN</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- apps content -->
+  <ion-content >
+    <div class="word">
+      <p><ion-icon name="bulb-outline"></ion-icon>Pastikan nombor akaun dan amaun yang ingin dibayar adalah betul.
+         Pilih saluran pembayaran sama ada FPX atau kad kredit.</p>
+    </div>
+
+    <div class="payment-form">
+      <ion-item lines="none">
+        <p>Nombor Akaun: </p><ion-input type="text" placeholder="Awesome Input"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <p>Alamat Harta:</p><ion-input type="text" placeholder="Awesome Input"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <p>Nombor KP:</p><ion-input type="text" placeholder="Awesome Input"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <p>Amaun:</p><ion-input type="text" placeholder="Awesome Input"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="payment-gateway">
+      <img src="assets/media/fpx.png" alt="" srcset="" routerLink="/fpx">
+      <img src="assets/media/visa.png" alt="" srcset="">
+    </div>
+  </ion-content>
+</ion-app>
+

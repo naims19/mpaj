@@ -1,0 +1,37 @@
+<ion-app>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back-outline" routerLink="/home"></ion-icon>
+      <ion-title>INBOX</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+
+    <div class="message">
+      
+      <ion-card>
+        
+
+        <ion-card-header>
+          <div class="icon">
+            <ion-icon slot="end" name="close" (click)="presentActionSheet()"></ion-icon>
+          </div>
+          <ion-card-subtitle>10 Mac 2021 </ion-card-subtitle>
+          <ion-card-title>Awesome Title</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Integer interdum maximus semper. Aliquam ut lacus lorem. 
+          Cras sit amet ante nec tellus blandit convallis. Maecenas 
+          velit felis, tristique in fermentum a, tempus vel leo. 
+          Vivamus eu mi eu ex vestibulum.
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-content>
+</ion-app>
+

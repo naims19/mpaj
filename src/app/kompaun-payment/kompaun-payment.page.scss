@@ -1,0 +1,64 @@
+*{
+    font-family: 'Poppins', arial;
+}
+ion-toolbar{
+    --background: none;
+    background-color: #0555B6;
+    height: 4rem;
+    
+
+    ion-icon{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+}
+ion-title{
+    margin-top: 1rem;
+    
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+}
+ion-content{
+    --background: none;
+    background-color: #FFFFFF;
+}
+.word {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: #F9E302;
+}
+.word p{
+    color: #0555B6;
+    text-align: justify;
+}
+.word ion-icon{
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+}
+.payment-form p{
+    color: #000;
+}
+.payment-form ion-item{
+    --background: none;
+    background-color: #FFFFFF;
+    margin-left: 0.1rem;
+    
+    ion-input{
+        color: #000;
+        margin-left: 0.5rem;
+    }
+
+    p{
+        font-weight: bold;
+    }
+}
+.payment-gateway img{
+    margin-top: 2rem;
+    width: 40%;
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+}
