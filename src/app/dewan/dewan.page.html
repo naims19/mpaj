@@ -1,4 +1,8 @@
 <ion-app>
+  <!-- font-link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
   <ion-header class="ion-no-border">
     <ion-toolbar>
       <ion-icon slot="start" name="arrow-back-outline" routerLink="/home"></ion-icon>
@@ -7,6 +11,26 @@
   </ion-header>
   
   <ion-content>
+    <!-- tempahan gelanggang badminton -->
+    <ion-card routerLink="/dewan-badminton">
+      <img src="assets/media/court.png" alt="" srcset="">
+      <ion-card-header>
+        <ion-card-title>TEMPAHAN GELANGGANG BADMINTON</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Tempahan gelanggang badminton boleh dilakukan dalam jangka masa 2 bulan lebih awal.
+      </ion-card-content>
+    </ion-card>
+    <!-- tempahan dewan acara majlis -->
+    <ion-card routerLink="/dewan-majlis">
+      <img src="assets/media/majlis.png" alt="" srcset="">
+      <ion-card-header>
+        <ion-card-title>TEMPAHAN DEWAN UNTUK ACARA MAJLIS</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Tempahan dewan untuk kegunaan acara majlis adalah dibuka dan boleh dilakukan sepanjang tahun
+      </ion-card-content>
+    </ion-card>
   
   </ion-content>
 </ion-app>

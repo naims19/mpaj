@@ -1,0 +1,101 @@
+*{
+    font-family: 'Poppins', arial;
+}
+ion-toolbar{
+    --background: none;
+    background-color: #0555B6;
+    height: 4.5rem;
+    
+
+    ion-icon{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+}
+ion-title{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+}
+ion-content{
+    --background: none;
+    background-color: #072459;
+}
+ion-card{
+    --background: none;
+    background-color: #fff;
+    border-radius: 16px;
+
+    ion-card-subtitle{
+        color: #000;
+        font-family: 'Poppins';
+        font-size: 0.9rem;
+
+        ion-label{
+            color: #D80808;
+            border: 1px solid #D80808;
+            width: 20%;
+        }
+    }
+
+    ion-card-content{
+        color: #000;
+
+        ion-item{
+            --background: none;
+            background-color: #fff;
+            color: #000;
+            margin-left: -1.1rem;
+
+            ion-label{
+                font-family: 'Poppins';
+            }
+        }
+
+        ion-calendar{
+            --background: none;
+            background-color: #000;
+            color: #fff;
+            border-radius: 16px;
+        }
+
+        ion-grid{
+            h4{
+                text-align: center;
+                font-weight: 600;
+            }
+            ion-row{
+                ion-col{
+                    
+                    ion-badge{
+                        
+                        color: #fff;
+                        
+                        font-size: 0.63rem;
+                    }
+                    ion-checkbox{
+                        width: 14px;
+                        height: 14px;
+                        --background:none;
+                        background-color: #fff;
+                        border: 1px solid #6E6E6E;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+
+        ion-button{
+            --background: none;
+            background-color: #0555B6;
+            color: #fff;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            border-radius: 5px;
+        }
+    }
+    
+}

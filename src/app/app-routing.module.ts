@@ -63,6 +63,26 @@ const routes: Routes = [
     path: 'fpx-kompaun',
     loadChildren: () => import('./fpx-kompaun/fpx-kompaun.module').then( m => m.FpxKompaunPageModule)
   },
+  {
+    path: 'dewan-badminton',
+    loadChildren: () => import('./dewan-badminton/dewan-badminton.module').then( m => m.DewanBadmintonPageModule)
+  },
+  {
+    path: 'dewan-majlis',
+    loadChildren: () => import('./dewan-majlis/dewan-majlis.module').then( m => m.DewanMajlisPageModule)
+  },
+  {
+    path: 'dewan-payment',
+    loadChildren: () => import('./dewan-payment/dewan-payment.module').then( m => m.DewanPaymentPageModule)
+  },
+  {
+    path: 'fpx-dewan',
+    loadChildren: () => import('./fpx-dewan/fpx-dewan.module').then( m => m.FpxDewanPageModule)
+  },
+  {
+    path: 'test',
+    loadChildren: () => import('./test/test.module').then( m => m.TestPageModule)
+  },
 ];
 
 @NgModule({

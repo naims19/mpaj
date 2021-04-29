@@ -16,7 +16,7 @@ ion-toolbar{
 }
 ion-title{
     margin-top: 1rem;
-    font-size: 1.2rem;
+    
     letter-spacing: 2px;
     font-family: 'Montserrat';
 }
@@ -24,19 +24,32 @@ ion-content{
     --background: none;
     background-color: #072459;
 }
+.word {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: #fff;
+}
+.word p{
+    color: #000;
+    text-align: justify;
+}
 ion-card{
     --background: none;
     background-color: #fff;
-    border-radius: 16px;
 
-    ion-card-title{
-        color: #0555B6;
-        font-family: 'Montserrat';
-        font-size: 1.3rem;
-        font-weight: bold;
-    }
-
-    ion-card-content{
+    p{
         color: #000;
+        font-size: 0.8rem;
+    }
+    h4{
+        color: #000;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    img{
+        margin-top: 4.5rem;
+        width: 48%;
     }
 }

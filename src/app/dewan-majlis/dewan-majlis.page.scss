@@ -29,14 +29,30 @@ ion-card{
     background-color: #fff;
     border-radius: 16px;
 
-    ion-card-title{
-        color: #0555B6;
-        font-family: 'Montserrat';
-        font-size: 1.3rem;
-        font-weight: bold;
+    ion-card-subtitle{
+        color: #000;
+        font-family: 'Poppins';
+        font-size: 0.9rem;
+
+        ion-label{
+            color: #D80808;
+            border: 1px solid #D80808;
+            width: 20%;
+        }
     }
 
     ion-card-content{
         color: #000;
+
+        ion-item{
+            --background: none;
+            background-color: #fff;
+            color: #000;
+            margin-left: -1.1rem;
+
+            ion-label{
+                font-family: 'Poppins';
+            }
+        }
     }
 }

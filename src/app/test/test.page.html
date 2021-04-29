@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>test</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card (click)="selectdiv1()">
+  <ion-card-header>
+    <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+    <ion-card-title>Awesome Title</ion-card-title>
+  </ion-card-header>
+  <ion-card-content *ngIf="divCard1">
+    Awesome content
+  </ion-card-content>
+</ion-card>
+
+<ion-card (click)="selectdiv2()">
+  <ion-card-header>
+    <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+    <ion-card-title>Awesome Title</ion-card-title>
+  </ion-card-header>
+  <ion-card-content *ngIf="divcard2">
+    Awesome content
+  </ion-card-content>
+</ion-card>
+
+<ion-card (click)="selectdiv3()">
+  <ion-card-header>
+    <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+    <ion-card-title>Awesome Title</ion-card-title>
+  </ion-card-header>
+  <ion-card-content *ngIf="divCard3">
+    Awesome content
+  </ion-card-content>
+</ion-card>
+</ion-content>

@@ -1,0 +1,170 @@
+<ion-app>
+  <!-- font-link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back-outline" routerLink="/dewan"></ion-icon>
+      <ion-title>DEWAN-BADMINTON</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <!-- tempahan gelanggang badminton -->
+    <ion-card >
+      <ion-card-header>
+        <ion-card-subtitle (click)="selectdiv1()"><ion-label>1</ion-label> Pilihan Dewan</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content *ngIf="divCard1">
+          <ion-item (click)="selectdiv2()">
+            <ion-label>Dewan MPAJ Pandan Indah</ion-label>
+          </ion-item>
+          <ion-item >
+            <ion-label>Dewan MPAJ</ion-label>
+          </ion-item>
+          <ion-item >
+            <ion-label>Dewan MPAJ Taman Cempaka</ion-label>
+          </ion-item>
+          <ion-item >
+            <ion-label>Dewan MPAJ Ukay Perdana</ion-label>
+          </ion-item>
+          <ion-item >
+            <ion-label>Dewan Perbandaran MPAJ</ion-label>
+          </ion-item>
+          <ion-item >
+            <ion-label>Dewan Serbaguna MPAJ AU2</ion-label>
+          </ion-item>
+          <ion-item >
+            <ion-label>Dewan Serbaguna MPAJ AU5</ion-label>
+          </ion-item>
+          <ion-item >
+            <ion-label>Tasik Tambahan MPAJ Hall</ion-label>
+          </ion-item>
+          <ion-item >
+            <ion-label>Dewan Komuniti MPAJ Cheras Indah</ion-label>
+          </ion-item>
+          <ion-item >
+            <ion-label>Dewan Komuniti Taman Bukit Mulia</ion-label>
+          </ion-item>
+          <ion-item >
+            <ion-label>MPAJ Ampang Jaya Community Hall</ion-label>
+          </ion-item>
+          <ion-item >
+            <ion-label>Dewan Komuniti MPAJ JKP Zon 17</ion-label>
+          </ion-item>
+          <ion-item >
+            <ion-label>Dewan Orang Ramai MPAJ JKP Zon 19</ion-label>
+          </ion-item>
+      </ion-card-content>
+      <!-- tarikh -->
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle (click)="selectdiv2()"><ion-label>2</ion-label> Pilihan Tarikh</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content *ngIf="divCard2">
+        <ion-calendar [(ngModel)]="date"
+              (change)="onChange($event)"
+              [type]="type"
+              [format]="'YYYY-MM-DD'"
+              (click)="selectdiv3()">
+              
+        </ion-calendar>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle><ion-label>3</ion-label> Pilihan gelanggang dan masa</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content *ngIf="divCard3">
+        <ion-grid fixed>
+          <h4>Gelanggang 1</h4>
+          <ion-row>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">8am-9am</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">2pm-3pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">7pm-8pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">9am-10am</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">3pm-4pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">8pm-9pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">10am-11am</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">4pm-5pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">9pm-10pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">11am-12pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">5pm-6pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">10pm-11pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">1pm-2pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">6pm-7pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">11pm-12am</ion-badge></ion-col>
+          </ion-row>
+          <!-- gelanggang 2 -->
+          <h4 style="margin-top: 1rem;">Gelanggang 2</h4>
+          <ion-row>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">8am-9am</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">2pm-3pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">7pm-8pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">9am-10am</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">3pm-4pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">8pm-9pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">10am-11am</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">4pm-5pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">9pm-10pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">11am-12pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">5pm-6pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">10pm-11pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">1pm-2pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">6pm-7pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">11pm-12am</ion-badge></ion-col>
+          </ion-row>
+          <!-- gelanggang 3 -->
+          <h4 style="margin-top: 1rem;">Gelanggang 3</h4>
+          <ion-row>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">8am-9am</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">2pm-3pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">7pm-8pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">9am-10am</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">3pm-4pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">8pm-9pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">10am-11am</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">4pm-5pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">9pm-10pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">11am-12pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">5pm-6pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">10pm-11pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">1pm-2pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">6pm-7pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">11pm-12am</ion-badge></ion-col>
+          </ion-row>
+          <!-- gelanggang 4 -->
+          <h4 style="margin-top: 1rem;">Gelanggang 4</h4>
+          <ion-row>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">8am-9am</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">2pm-3pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">7pm-8pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">9am-10am</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">3pm-4pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">8pm-9pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">10am-11am</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">4pm-5pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge color="danger">9pm-10pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">11am-12pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">5pm-6pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">10pm-11pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">1pm-2pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">6pm-7pm</ion-badge></ion-col>
+            <ion-col size="4"><ion-checkbox></ion-checkbox><ion-badge style="background-color: #05B613;">11pm-12am</ion-badge></ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-button expand="block" fill="clear" routerLink="/dewan-payment">
+          SETERUSNYA
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+    
+
+    
+  
+  </ion-content>
+</ion-app>
+
