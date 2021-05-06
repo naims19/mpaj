@@ -1,0 +1,120 @@
+<ion-app>
+  <!-- font-link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back-outline" routerLink="/transport"></ion-icon>
+      <ion-searchbar placeholder="Search Places" inputmode="decimal" type="decimal" [debounce]="250" color="dark"></ion-searchbar>
+      <div class="type">
+        <ion-chip mode="ios" outline="true">
+          <ion-label>Parking</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/gas.png" alt="" srcset=""><ion-label>Gas</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/fork.png" alt="" srcset=""><ion-label>Restaurant</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/grocery.png" alt="" srcset=""><ion-label>Groceries</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/cafe.png" alt="" srcset=""><ion-label>Cafe</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/hotel.png" alt="" srcset=""><ion-label>Hotel</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/hospital.png" alt="" srcset=""><ion-label>Hospital</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/pharmacy.png" alt="" srcset=""><ion-label>Pharmacies</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/local.png" alt="" srcset=""><ion-label>Interest Places</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/more.png" alt="" srcset=""><ion-label>More</ion-label>
+        </ion-chip>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <!-- location -->
+    <ion-list>
+      <ion-item lines="none" routerLink="/location">
+        <img src="assets/media/place.png" alt="" srcset="">
+        <div class="word">
+          <h3>Ampang Point</h3>
+          <p>Jalan Memanda 9, Taman Dato Ahmad Razali…</p>
+        </div>
+      </ion-item>
+      <ion-item lines="none">
+        <img src="assets/media/place.png" alt="" srcset="">
+        <div class="word">
+          <h3>Ampang Hospital</h3>
+          <p>Hospital Ampang, Jalan Mewah Utara, Taman…</p>
+        </div>
+      </ion-item>
+      <ion-item lines="none">
+        <img src="assets/media/place.png" alt="" srcset="">
+        <div class="word">
+          <h3>Ampang Damai Condominium</h3>
+          <p>Jalan Wawasan 3, Bandar Baru Ampang…</p>
+        </div>
+      </ion-item>
+      <ion-item lines="none">
+        <img src="assets/media/place.png" alt="" srcset="">
+        <div class="word">
+          <h3>Ampang Mewah</h3>
+          <p>Ampang Jaya, Selangor</p>
+        </div>
+      </ion-item>
+      <ion-item lines="none">
+        <img src="assets/media/place.png" alt="" srcset="">
+        <div class="word">
+          <h3>Ampang Hilir</h3>
+          <p>Kuala Lumpur, Federal Territory of Kuala Lum…</p>
+        </div>
+      </ion-item>
+      <ion-item lines="none">
+        <img src="assets/media/place.png" alt="" srcset="">
+        <div class="word">
+          <h3>Ampang Jaya Municipal Council</h3>
+          <p>Jalan Pandan Utama, Pandan Indah, Kuala…</p>
+        </div>
+      </ion-item>
+      <ion-item lines="none">
+        <img src="assets/media/place.png" alt="" srcset="">
+        <div class="word">
+          <h3>Kuala Ampang</h3>
+          <p>Kuala Lumpur, Federal Territory of Kuala Lum…</p>
+        </div>
+      </ion-item>
+      <ion-item lines="none">
+        <img src="assets/media/place.png" alt="" srcset="">
+        <div class="word">
+          <h3>Ampang Lookout Point</h3>
+          <p>Jalan Hulu Langat, Ampang Jaya, Selangor</p>
+        </div>
+      </ion-item>
+      <ion-item lines="none">
+        <img src="assets/media/place.png" alt="" srcset="">
+        <div class="word">
+          <h3>Ampang Boulevard Condominium</h3>
+          <p>Jalan Air Bukit, Taman Ampang Utama, Amp…</p>
+        </div>
+      </ion-item>
+      <ion-item lines="none">
+        <img src="assets/media/place.png" alt="" srcset="">
+        <div class="word">
+          <h3>Ampang LRT Station</h3>
+          <p>Jalan Ampang, Pekan Ampang, Ampang Ja…</p>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-app>
+

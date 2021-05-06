@@ -1,0 +1,34 @@
+<ion-app>
+  <!-- font-link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back-outline" routerLink="/transport"></ion-icon>
+      <ion-searchbar placeholder="Your Location" inputmode="decimal" type="decimal" [debounce]="250" color="dark" style="margin-top:1.5rem;"></ion-searchbar>
+      <ion-icon slot="end" name="ellipsis-horizontal-outline"></ion-icon>
+      <div class="location">
+        <ion-searchbar placeholder="Ampang Point" inputmode="decimal" type="decimal" [debounce]="250" color="dark"></ion-searchbar>
+      </div>
+     
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <!-- location -->
+    <ion-item lines="none">
+      <ion-label>Depart At</ion-label>
+    </ion-item>
+    <div class="transport">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Recommended Route</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          Awesome content
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-content>
+</ion-app>
+

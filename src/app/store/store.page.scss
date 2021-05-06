@@ -1,0 +1,82 @@
+*{
+    font-family: 'Poppins', arial;
+}
+ion-toolbar{
+    --background: none;
+    background-color: #0555B6;
+    height: 4.5rem;
+    
+
+    ion-icon{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+}
+ion-title{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+}
+ion-content{
+    --background: none;
+    background-color: #072459;
+}
+.logo{
+    background-image: url(../../assets/media/lobster.jpg);
+    height: 35vh;
+    background-size: cover;
+}
+
+.food{
+    overflow: auto;
+    white-space: nowrap;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+.food ion-card{
+    margin: 4px;
+    display: inline-flex;
+    flex-direction: column;
+    
+    
+    width: 50%;
+    --background: none;
+    background-color: #fff;
+    
+    ion-card-title{
+        font-size: 1rem;
+        color: #000;
+    }
+
+    ion-card-content{
+        color: #000;
+    }
+}
+.store{
+    overflow: auto;
+    white-space: nowrap;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+.store ion-card{
+    margin: 4px;
+    display: inline-flex;
+    flex-direction: column;
+    
+    
+    width: 50%;
+    --background: none;
+    background-color: #fff;
+    
+    ion-card-title{
+        font-size: 1rem;
+        color: #000;
+    }
+
+    ion-card-content{
+        color: #000;
+    }
+}

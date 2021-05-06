@@ -1,0 +1,89 @@
+<ion-app>
+  <!-- font-link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back-outline" routerLink="/home"></ion-icon>
+      <ion-searchbar placeholder="Search Places" inputmode="decimal" type="decimal" [debounce]="250" color="dark"></ion-searchbar>
+      <div class="type">
+        <ion-chip mode="ios" outline="true">
+          <ion-label>Parking</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/gas.png" alt="" srcset=""><ion-label>Gas</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/fork.png" alt="" srcset=""><ion-label>Restaurant</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/grocery.png" alt="" srcset=""><ion-label>Groceries</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/cafe.png" alt="" srcset=""><ion-label>Cafe</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/hotel.png" alt="" srcset=""><ion-label>Hotel</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/hospital.png" alt="" srcset=""><ion-label>Hospital</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/pharmacy.png" alt="" srcset=""><ion-label>Pharmacies</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/local.png" alt="" srcset=""><ion-label>Interest Places</ion-label>
+        </ion-chip>
+        <ion-chip mode="ios" outline="true">
+          <img src="assets/media/more.png" alt="" srcset=""><ion-label>More</ion-label>
+        </ion-chip>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <div class="title">
+      <ion-item lines="none">
+        <ion-label>Latest in Ampang</ion-label>
+      </ion-item>
+    </div>
+    <ion-card>
+      <img src="assets/media/abc.png" alt="" srcset="" 
+      style="display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      margin-top: 1rem;">
+      <ion-card-content>
+        <ion-card-title>Restaurant ABC</ion-card-title>
+        4.5 <img src="assets/media/star.png">| Restaurant | 3.2KM
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <img src="assets/media/saga.png" 
+      style="display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      margin-top: 1rem;">
+      <ion-card-content>
+        <ion-card-title>Bukit Saga</ion-card-title>
+        4.2 <img src="assets/media/star.png">| Interest Place | 10.5KM
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <img src="assets/media/palm.png" 
+      style="display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      margin-top: 1rem;">
+      <ion-card-content>
+        <ion-card-title>Hotel Palm Inn</ion-card-title>
+        4.0 <img src="assets/media/star.png">| Hotel | 2.1KM
+      </ion-card-content>
+    </ion-card>
+    <br>
+  </ion-content>
+</ion-app>
+

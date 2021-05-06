@@ -1,0 +1,97 @@
+<ion-app>
+  <!-- font-link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back-outline" routerLink="/online-shop"></ion-icon>
+      <ion-title>STORE</ion-title>
+      <ion-icon slot="end" name="heart-outline"></ion-icon>
+      <ion-icon slot="end" name="cart-outline" style="margin-right: 0.5rem;"></ion-icon>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <!-- Store Background -->
+    <div class="logo">
+    </div>
+    <h3 style="text-align: center;">Kay's Steak And Lobster Restaurant</h3>
+    <!-- list categories -->
+
+    <h3 style="margin-left: 1rem; margin-top: 1.5rem;">Top Food</h3>
+
+    <div class="food">
+      <ion-card (click)="showModal()">
+        <img src="assets/media/mee.jpg" alt="" srcset="">
+        <ion-card-header>
+          <ion-card-title>Mee Goreng Mamak</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          RM 5.00 
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <img src="assets/media/burger.jpg" alt="" srcset="">
+        <ion-card-header>
+          <ion-card-title>Burger</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          RM 5.00
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <img src="assets/media/lobster.jpg" alt="" srcset="">
+        <ion-card-header>
+          <ion-card-title>Steamed Lobster</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          RM 20.00
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <img src="assets/media/seafood2.jpg" alt="" srcset="">
+        <ion-card-header>
+          <ion-card-title>Nasi Goreng Seafood</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          RM 12.00
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <h3 style="margin-left: 1rem;">Food</h3>
+
+    <div class="store">
+      <ion-card >
+        <img src="assets/media/lobster.jpg" alt="" srcset="">
+        <ion-card-header>
+          <ion-card-title>Steamed Lobster</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          RM 20.00
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <img src="assets/media/burger.jpg" alt="" srcset="">
+        <ion-card-header>
+          <ion-card-title>Burger On 16</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          RM 5.00
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <img src="assets/media/mee.jpg" alt="" srcset="">
+        <ion-card-header>
+          <ion-card-title>Mee Goreng</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          RM 6.00
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <br>
+  </ion-content>
+</ion-app>
+
