@@ -1,0 +1,70 @@
+<ion-app>
+  <!-- font-link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back-outline" routerLink="/location"></ion-icon>
+      <ion-searchbar placeholder="Your Location" inputmode="decimal" type="decimal" [debounce]="250" color="dark" style="margin-top:1.5rem;"></ion-searchbar>
+      <ion-icon slot="end" name="ellipsis-horizontal-outline"></ion-icon>
+      <div class="location">
+        <ion-searchbar placeholder="Ampang Point" inputmode="decimal" type="decimal" [debounce]="250" color="dark"></ion-searchbar>
+      </div>
+     
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        <img src="assets/media/walk.png" alt="" srcset=""><span style="color: #000;">></span><img src="assets/media/bus.png" style="margin-left: 0.5rem;">
+        <span 
+        style="border: 1px solid #0555B6; background-color: #0555B6; color: #fff;"
+        >303</span>
+        <span 
+        style="border: 1px solid #05B613; background-color: #05B613; color: #fff;">T302</span>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+            <ion-icon name="location" color="light"></ion-icon>
+          <div class="location">
+            <ion-label>Taman Kosas</ion-label>
+            <ion-label>68000 Ampang Jaya, Selangor</ion-label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <img src="assets/media/walk.png" alt="" srcset="">
+          <div class="location">
+            <ion-label>Walk 8 min (650m)</ion-label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <img src="assets/media/bus.png" alt="" srcset="">
+          <div class="location">
+            <ion-label>SPG Kosas</ion-label>
+            <span 
+            style="border: 1px solid #05B613; background-color: #05B613; color: #fff;">T302</span>
+            <ion-label>Every 9 Min</ion-label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="ellipse" color="light"></ion-icon>
+          <div class="location">
+            <ion-label>Ampang Point</ion-label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <img src="assets/media/place.png" alt="" srcset="">
+          <div class="location">
+            <ion-label>Ampang Point</ion-label>
+            <ion-label>53, Jalan Demanda 9, Taman Dato Ahmad Razali, 6800 Ampang, Selangor</ion-label>
+          </div>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <div class="time">
+      <p>10:21 AM . <span>21 min</span></p>
+    </div>
+  </ion-content>
+</ion-app>
+

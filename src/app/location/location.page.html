@@ -5,27 +5,71 @@
 
   <ion-header class="ion-no-border">
     <ion-toolbar>
-      <ion-icon slot="start" name="arrow-back-outline" routerLink="/transport"></ion-icon>
-      <ion-searchbar placeholder="Your Location" inputmode="decimal" type="decimal" [debounce]="250" color="dark" style="margin-top:1.5rem;"></ion-searchbar>
-      <ion-icon slot="end" name="ellipsis-horizontal-outline"></ion-icon>
+      <ion-icon class="icon" slot="start" name="arrow-back-outline" routerLink="/transport"></ion-icon>
       <div class="location">
-        <ion-searchbar placeholder="Ampang Point" inputmode="decimal" type="decimal" [debounce]="250" color="dark"></ion-searchbar>
+          <ion-item lines="none">
+            <ion-icon name="locate"></ion-icon>
+            <ion-input type="text" placeholder="Your Location"></ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-icon name="location"></ion-icon>
+            <ion-input type="text" placeholder="Ampang Point"></ion-input>
+          </ion-item>
       </div>
+      <ion-icon class="icon" slot="end" name="ellipsis-horizontal-outline" style="margin-right: 0.5rem;"></ion-icon>
+      
      
     </ion-toolbar>
   </ion-header>
   <ion-content>
     <!-- location -->
-    <ion-item lines="none">
-      <ion-label>Depart At</ion-label>
-    </ion-item>
+    <div class="title">
+      <ion-item lines="none">
+        <ion-label>Depart At</ion-label>
+      </ion-item>
+    </div>
+
     <div class="transport">
-      <ion-card>
+      <ion-card routerLink="/location-bus">
         <ion-card-header>
           <ion-card-subtitle>Recommended Route</ion-card-subtitle>
+          <img src="assets/media/walk.png" alt="" srcset=""><span style="color: #000;">></span><img src="assets/media/bus.png" style="margin-left: 0.5rem;">
+          <span 
+          style="border: 1px solid #0555B6; background-color: #0555B6; color: #fff;"
+          >303</span>
+          <span 
+          style="border: 1px solid #05B613; background-color: #05B613; color: #fff;">T302</span>
+          <ion-label class="time ion-float-right">21 Min ></ion-label>
         </ion-card-header>
         <ion-card-content>
-          Awesome content
+          <p>10:15 - 10:35 am</p>
+          <p>Every 5 min from <span style="color: #6E6E6E;">SPG Kosas</span></p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card style="margin-top: 1rem;">
+        <ion-card-header>
+          <ion-card-subtitle>More Bus</ion-card-subtitle>
+          <img src="assets/media/walk.png" alt="" srcset=""><span style="color: #000;">></span><img src="assets/media/bus.png" style="margin-left: 0.5rem;">
+          <span 
+          style="border: 1px solid #05B613; background-color: #05B613; color: #fff;">T300</span>
+          <ion-label class="time ion-float-right">34 Min ></ion-label>
+        </ion-card-header>
+        <ion-card-content>
+          <p>10:15 - 10:35 am</p>
+          <p>Every 5 min from <span style="color: #6E6E6E;">SM Kosas</span></p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>More Bus</ion-card-subtitle>
+          <img src="assets/media/walk.png" alt="" srcset=""><span style="color: #000;">></span><img src="assets/media/bus.png" style="margin-left: 0.5rem;">
+          <span 
+          style="border: 1px solid #05B613; background-color: #05B613; color: #fff;">T300</span>
+          <ion-label class="time ion-float-right">34 Min ></ion-label>
+        </ion-card-header>
+        <ion-card-content>
+          <p>10:15 - 10:35 am</p>
+          <p>Every 5 min from <span style="color: #6E6E6E;">SM Kosas</span></p>
         </ion-card-content>
       </ion-card>
     </div>
