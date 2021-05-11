@@ -1,0 +1,127 @@
+*{
+    font-family: 'Poppins', arial;
+}
+.cart-title{
+    --background: none;
+    background-color: #0555B6;
+    height: 4.5rem;
+    
+
+    ion-icon{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+    ion-title{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        font-family: 'Montserrat';
+    }
+}
+
+ion-content{
+    --background: none;
+    background-color: #072459;
+}
+.title{
+    margin-top: 1rem;
+    margin-left: 1.3rem;
+}
+.delivery ion-card{
+    --background: none;
+    background-color: #fff;
+
+    ion-card-title{
+        color: #000;
+        font-size: 1.5rem;
+
+        ion-icon{
+            margin-right: 0.5rem;
+        }
+    }
+
+    p{
+        color: #000;
+        font-size: 1rem;
+    }
+}
+.payment ion-card{
+    --background: none;
+    background-color: #fff;
+
+    ion-card-title{
+        color: #000;
+        font-size: 1.5rem;
+
+        ion-icon{
+            margin-right: 0.5rem;
+        }
+    }
+
+    ion-card-content{
+        color: #000;
+        font-size: 1rem;
+        
+    }
+
+}
+.order ion-item{
+    --background: none;
+    --border-color: #fff;
+
+    ion-label{
+        font-family: 'Poppins';
+    }
+}
+ion-footer{
+    --background: none;
+    ion-toolbar{
+        --background:none;
+        background-color: #fff;
+        border-radius: 5px;
+        
+        
+        .total p{
+            color: #0555B6;
+            margin-left: 1.3rem;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        .total ion-button{
+            --background: none;
+            background-color: #0555B6;
+            color: #fff;
+            margin-top: 1rem;
+            border-radius: 5px;
+            width: 90%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+// .total{
+//     margin-top: 2rem;
+//     background-color: #fff;
+//     border-radius: 5px;
+// }
+// .total p{
+//     padding-top: 1rem;
+//     margin-left: 1.3rem;
+//     color: #0555B6;
+//     font-weight: bold;
+//     font-size: 1.3rem;
+// }
+// .total ion-button{
+//     --background: none;
+//     background-color: #0555B6;
+//     color: #fff;
+//     margin-top: 1rem;
+//     border-radius: 5px;
+//     width: 90%;
+//     display: block;
+//     margin-left: auto;
+//     margin-right: auto;
+// }

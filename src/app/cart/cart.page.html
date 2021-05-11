@@ -1,0 +1,74 @@
+<ion-app>
+  <!-- font-link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar class="cart-title">
+      <ion-icon slot="start" name="arrow-back-outline" routerLink="/online-shop"></ion-icon>
+      <ion-title>CART</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <!-- delivery title -->
+    <div class="title">
+      <p>Deliver to</p>
+    </div>
+    <!-- delivery card -->
+    <div class="delivery">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title><ion-icon name="location"></ion-icon>Delivery address</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <img src="assets/media/ampang.png" alt="" srcset="">
+          <p>Taman Kosas</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <!-- payment method title -->
+    <div class="title">
+      <p>Payment method</p>
+    </div>
+    <!-- payment card -->
+    <div class="payment">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title><ion-icon name="wallet"></ion-icon>Payment Method 
+            <ion-icon name="pencil-outline" class="ion-float-right"></ion-icon></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          FPX Online Banking <ion-label class="ion-float-right">Rm 5.00</ion-label>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <!-- order summary -->
+    <div class="title" >
+      <p>Order Summary</p>
+    </div>
+    <div class="order">
+      <ion-item>
+        <ion-label>Nasi Goreng <span>x2</span> <ion-label class="ion-float-right">RM 10.00</ion-label></ion-label>
+      </ion-item>
+    </div>
+    
+    <!-- <div class="total">
+      <p>Total : <span>RM 10.00</span></p>
+      <ion-button expand="block" fill="clear">
+        Place Order
+      </ion-button>
+    </div> -->
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+      <div class="total">
+        <p>Total : <span>RM 10.00</span></p>
+        <ion-button expand="block" fill="clear">
+          Place Order
+        </ion-button>
+      </div>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>
+

@@ -111,6 +111,10 @@ const routes: Routes = [
     path: 'location-bus',
     loadChildren: () => import('./location-bus/location-bus.module').then( m => m.LocationBusPageModule)
   },
+  {
+    path: 'cart',
+    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+  },
 ];
 
 @NgModule({
