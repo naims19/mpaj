@@ -36,19 +36,11 @@ ion-content{
     white-space: nowrap;
     margin-left: 0.8rem;
 }
-.kategori ion-card{
+.kategori ion-chip{
     margin: 4px;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    height: 80px;
-    --background: none;
-    
-    
-    ion-card-title{
-        font-size: 1.3rem;
+    background-color: #fff;
+
+    ion-label{
         color: #000;
     }
 }

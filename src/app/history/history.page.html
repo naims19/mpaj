@@ -1,0 +1,40 @@
+<ion-app>
+  <!-- font-link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back-outline" routerLink="/online-shop"></ion-icon>
+      <ion-title>HISTORY</ion-title>
+      <ion-icon slot="end" name="cart-outline" style="margin-right: 0.5rem;" routerLink="/cart"></ion-icon>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <!-- order history -->
+    <div class="history">
+      <ion-card>
+        <ion-card-header>
+          <ion-label>Ali Maju</ion-label> <ion-label class="ion-float-right">RM 5.00</ion-label>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-label>Nasi Goreng</ion-label> <ion-button expand="block" fill="clear" shape="round">
+            Reorder
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-label>Ali Maju</ion-label> <ion-label class="ion-float-right">RM 5.00</ion-label>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-label>Mee Goreng</ion-label> <ion-button expand="block" fill="clear" shape="round">
+            Reorder
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-content>
+</ion-app>
+

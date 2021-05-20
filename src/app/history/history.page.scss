@@ -1,0 +1,53 @@
+*{
+    font-family: 'Poppins', arial;
+}
+ion-toolbar{
+    --background: none;
+    background-color: #0555B6;
+    height: 4.5rem;
+    
+
+    ion-icon{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+}
+ion-title{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+}
+ion-content{
+    --background: none;
+    background-color: #fff;
+}
+.history ion-card{
+    --background: none;
+    background-color: #fff;
+    border: 1px solid #C9C9C9;
+
+    ion-label{
+        color: #000;
+    }
+
+    ion-card-header{
+        ion-label{
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
+    }
+
+    ion-card-content{
+
+        ion-button{
+            --background: none;
+            background-color: #0555B6;
+            color: #fff;
+            border-radius: 5px;
+        }
+    }
+    
+}

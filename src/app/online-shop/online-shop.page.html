@@ -7,7 +7,7 @@
     <ion-toolbar>
       <ion-icon slot="start" name="arrow-back-outline" routerLink="/home"></ion-icon>
       <ion-title>KEDAI-ONLINE</ion-title>
-      <ion-icon slot="end" name="heart-outline"></ion-icon>
+      <ion-icon slot="end" name="heart-outline" routerLink="/history"></ion-icon>
       <ion-icon slot="end" name="cart-outline" style="margin-right: 0.5rem;" routerLink="/cart"></ion-icon>
     </ion-toolbar>
   </ion-header>
@@ -21,21 +21,18 @@
     <h3 style="margin-left: 1rem;">Category</h3>
 
     <div class="kategori">
-      <ion-card style="background-image: url(../../assets/media/mee.jpg) !important; background-size: cover;">
-        <ion-card-header>
-          <ion-card-title>Goreng-Goreng</ion-card-title>
-        </ion-card-header>
-      </ion-card>
-      <ion-card  style="background-image: url(../../assets/media/chicken.jpg) !important; background-size: cover;">
-        <ion-card-header>
-          <ion-card-title>Western</ion-card-title>
-        </ion-card-header>
-      </ion-card>
-      <ion-card style="background-image: url(../../assets/media/seafood.jpg) !important; background-size: cover;">
-        <ion-card-header>
-          <ion-card-title>Seafood</ion-card-title>
-        </ion-card-header>
-      </ion-card>
+      <ion-chip mode="ios" outline="true">
+        <ion-label>Goreng-goreng</ion-label>
+      </ion-chip>
+      <ion-chip mode="ios" outline="true">
+        <ion-label>Seafood</ion-label>
+      </ion-chip>
+      <ion-chip mode="ios" outline="true">
+        <ion-label>Western</ion-label>
+      </ion-chip>
+      <ion-chip mode="ios" outline="true">
+        <ion-label>Snack</ion-label>
+      </ion-chip>
     </div>
 
     <h3 style="margin-left: 1rem;">Top Food</h3>

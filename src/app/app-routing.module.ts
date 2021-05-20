@@ -119,6 +119,18 @@ const routes: Routes = [
     path: 'payment-method',
     loadChildren: () => import('./payment-method/payment-method.module').then( m => m.PaymentMethodPageModule)
   },
+  {
+    path: 'process',
+    loadChildren: () => import('./process/process.module').then( m => m.ProcessPageModule)
+  },
+  {
+    path: 'history',
+    loadChildren: () => import('./history/history.module').then( m => m.HistoryPageModule)
+  },
+  {
+    path: 'rating',
+    loadChildren: () => import('./rating/rating.module').then( m => m.RatingPageModule)
+  },
 ];
 
 @NgModule({
