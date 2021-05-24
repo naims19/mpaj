@@ -131,6 +131,10 @@ const routes: Routes = [
     path: 'rating',
     loadChildren: () => import('./rating/rating.module').then( m => m.RatingPageModule)
   },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
 ];
 
 @NgModule({

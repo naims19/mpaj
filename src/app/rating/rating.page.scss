@@ -65,14 +65,25 @@ ion-content{
     border-radius: 5px;
     font-size: 1.15rem;
 }
-.rating-subtitle ion-button{
-    width: 90%;
+
+ion-footer{
     --background: none;
-    background-color: #0555B6;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    color: #fff;
-    margin-top: 0.5rem;
+
+    ion-toolbar{
+        --background:none;
+        background-color: #fff;
+        border-radius: 5px;
+
+        .feedback-btn ion-button{
+            width: 90%;
+            --background: none;
+            background-color: #0555B6;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+            color: #fff;
+            margin-top: 0.5rem;
+        }
+    }
 }
