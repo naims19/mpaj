@@ -6,8 +6,8 @@
   <!-- header -->
   <ion-header class="ion-no-border">
     <ion-toolbar>
-      <ion-icon slot="start" name="arrow-back-outline" routerLink="/home"></ion-icon>
-      <ion-title>PROFILE</ion-title>
+      <ion-icon slot="start" name="arrow-back-outline" routerLink="/profile"></ion-icon>
+      <ion-title>EDIT PROFILE</ion-title>
     </ion-toolbar>
   </ion-header>
   <!-- apps content -->
@@ -25,47 +25,35 @@
     <ion-card>
       <ion-card-header>
         <ion-label>Nombor Pendaftaran</ion-label>
-        <ion-icon name="pencil-outline" class="ion-float-right"></ion-icon>
-        <ion-label class="edit ion-float-right" routerLink="/edit-profile">Edit Profile</ion-label>
+        <ion-icon name="close" class="ion-float-right" routerLink="/profile"></ion-icon>
       </ion-card-header>
       <ion-card-content>
-        <ion-label>950215086817</ion-label>
+        <ion-input type="number" placeholder="950215086817"></ion-input>
       </ion-card-content>
       <ion-card-header>
         <ion-label>Nama</ion-label>
       </ion-card-header>
       <ion-card-content>
-        <ion-label>Muhamad Faiz Bin Zulkipli</ion-label>
+        <ion-input type="text" placeholder="Muhamad Faiz Bin Zulkipli"></ion-input>
       </ion-card-content>
       <ion-card-header>
         <ion-label>Nombor Telefon</ion-label>
-        
       </ion-card-header>
       <ion-card-content>
-        <ion-label>0175157736</ion-label>
+        <ion-input type="number" placeholder="0175157736"></ion-input>
       </ion-card-content>
       <ion-card-header>
         <ion-label>Email</ion-label>
-        
       </ion-card-header>
       <ion-card-content>
-        <ion-label>faizzulkipli13@gmail.com</ion-label>
-      </ion-card-content>
-      <ion-card-header>
-        <ion-label>Email</ion-label>
-        
-      </ion-card-header>
-      <ion-card-content>
-        <ion-label>faizzulkipli13@gmail.com</ion-label>
+        <ion-input type="text" placeholder="faizzulkipli13@gmail.com"></ion-input>
       </ion-card-content>
       <ion-card-header>
         <ion-label>Alamat</ion-label>
-        
       </ion-card-header>
       <ion-card-content>
-        <ion-label>AC-4-12A JALAN PANDAN INDAH 3/6 PANDAN INDAH 55100
-          KUALA LUMPUR
-        </ion-label>
+        <ion-textarea placeholder="AC-4-12A JALAN PANDAN INDAH 3/6 PANDAN INDAH 55100 KUALA LUMPUR">
+        </ion-textarea>
       </ion-card-content>
     </ion-card>
     

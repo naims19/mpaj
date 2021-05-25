@@ -64,12 +64,25 @@ ion-content{
             color: #000;
             font-size: 1.2rem;
             margin-left: 0.5rem;
+            display: inline-flex;
         }
     }
     ion-card-content{
         ion-label{
             color: #000;
             font-weight: 600;
+        }
+        ion-input{
+            border: 2px solid #C9C9C9;
+            width: 80%;
+            border-radius: 5px;
+            color: #000;
+        }
+        ion-textarea{
+            border: 2px solid #C9C9C9;
+            width: 80%;
+            border-radius: 5px;
+            color: #000;
         }
     }
 }
