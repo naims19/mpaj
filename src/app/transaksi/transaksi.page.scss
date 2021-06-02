@@ -1,0 +1,105 @@
+*{
+    font-family: 'Poppins', arial;
+}
+ion-toolbar{
+    --background: none;
+    background-color: #0555B6;
+    height: 4.5rem;
+    
+
+    ion-icon{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+}
+ion-title{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+}
+ion-content{
+    --background: none;
+    background-color: #F1F9FF;
+}
+p{
+    color: #000;
+}
+
+.filter ion-chip{
+    margin-bottom: 1rem;
+    --background: none;
+    background-color: #fff;
+    border: 1px solid #C9C9C9;
+    font-family: 'Poppins';
+
+    ion-label{
+        color: #000;
+    }
+    ion-select{
+        color: #000;
+        font-family: 'Poppins';
+
+        ion-select-option{
+            --background: none;
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}
+.table{
+    margin-top: 1rem;
+}
+.table ion-card{
+    
+    padding: 0;
+    margin: 0;
+    width: 97%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    --background: none;
+    background-color: #fff;
+    
+    ion-card-header{
+        padding: 0;
+        margin: 0;
+        background-color: #0555B6;
+
+        // ion-row{
+        //     border-radius: 5px;
+        //     border: 1px solid #fff;
+        // }
+
+        // ion-col{
+        //     border: 1px solid #fff;
+        // }
+
+        ion-card-subtitle{
+            font-family: 'Montserrat';
+            color: #fff;
+            // text-align: center;
+        }
+    }
+    ion-card-content{
+        padding: 0;
+        margin: 0;
+
+        ion-label{
+            color: #000;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        ion-row{
+            border-radius: 5px;
+            border: 1px solid #fff;
+        }
+
+        ion-col{
+            border: 1px solid #fff;
+        }
+    }
+}
