@@ -1,0 +1,112 @@
+*{
+    font-family: 'Poppins', arial;
+}
+ion-toolbar{
+    --background: none;
+    background-color: #0555B6;
+    height: 4.5rem;
+    
+
+    ion-icon{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+}
+ion-title{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+}
+ion-content{
+    --background: none;
+    background-color: #fff;
+}
+.logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    margin-top: 2rem;
+}
+.logo h3{
+    color: #000;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+.bil ion-card{
+    --background: none;
+    background-color: #fff;
+    border: 1px solid #BCE0FD;
+
+    ion-card-subtitle{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    p{
+        margin-left: 1rem;
+        color: #000;
+        font-weight: 600;
+    }
+    h4{
+        margin-top: -1rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        color: #0555B6;
+        font-weight: 600;
+    }
+    ion-card-content{
+        padding: 0;
+        margin: 0;
+    }
+}
+.denda{
+    color: #000;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: -0.3rem;
+}
+// .akaun ion-row{
+//     background-color: #0555B6;
+//     border-radius: 5px;
+// }
+.akaun ion-card{
+    // padding: 0;
+    // margin: 0;
+    --background: none;
+    background-color: #fff;
+    border: 1px solid #BCE0FD;
+
+    ion-card-subtitle{
+        margin-left: 1rem;
+        color: #fff;
+    }
+    
+    ion-grid{
+        padding: 0;
+        margin: 0;
+    }
+    ion-card-header{
+        padding: 0;
+        margin: 0;
+        background-color: #0555B6;
+        p{
+            color: #fff;
+            font-size: 0.8rem;
+        }
+    }
+    ion-card-content{
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+        ion-row{
+            // border: 1px solid #000;
+        }
+        p{
+            color: #000;
+            font-size: 0.8rem;
+        }
+    }
+}

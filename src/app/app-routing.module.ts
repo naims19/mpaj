@@ -143,6 +143,22 @@ const routes: Routes = [
     path: 'transaksi',
     loadChildren: () => import('./transaksi/transaksi.module').then( m => m.TransaksiPageModule)
   },
+  {
+    path: 'bil-mobile',
+    loadChildren: () => import('./bil-mobile/bil-mobile.module').then( m => m.BilMobilePageModule)
+  },
+  {
+    path: 'statement-mobile',
+    loadChildren: () => import('./statement-mobile/statement-mobile.module').then( m => m.StatementMobilePageModule)
+  },
+  {
+    path: 'bil-web',
+    loadChildren: () => import('./bil-web/bil-web.module').then( m => m.BilWebPageModule)
+  },
+  {
+    path: 'statement-web',
+    loadChildren: () => import('./statement-web/statement-web.module').then( m => m.StatementWebPageModule)
+  },
 ];
 
 @NgModule({
