@@ -28,31 +28,74 @@ ion-content{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
-    margin-top: 2rem;
+    width: 20%;
+}
+.logo ion-item{
+    --background: none;
+    background-color: #fff;
+    p{
+        margin-left: 1rem;
+        font-family: 'Poppins';
+        color: #000;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
 }
 .logo h3{
     color: #000;
     text-align: center;
     font-family: 'Montserrat';
+    font-size: 1.15rem;
+}
+.bil-detail{
+    p{
+        color: #000;
+        margin-left: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+    ion-row{
+        border: 1px solid #000;
+    }
+    ion-col{
+        // border: 1px solid #000;
+        h4{
+        margin-top: -1rem;
+        margin-left: 0.5rem;
+        font-size: 1rem;
+        color: #000;
+        
+        }
+        p{
+            margin-left: 0.5rem;
+            color: #000;
+            
+        }
+    }
 }
 .bil ion-card{
     --background: none;
     background-color: #fff;
     border: 1px solid #BCE0FD;
 
+    // ion-row{
+    //     border: 1px solid #000;
+    //     biord
+    // }
+
     ion-card-subtitle{
         margin-top: 1rem;
-        margin-left: 1rem;
+        margin-left: 0.5rem;
     }
     p{
-        margin-left: 1rem;
+        margin-left: 0.5rem;
         color: #000;
         font-weight: 600;
     }
     h4{
         margin-top: -1rem;
-        margin-left: 1rem;
+        margin-left: 0.5rem;
         font-size: 1rem;
         color: #0555B6;
         font-weight: 600;
@@ -85,4 +128,5 @@ ion-content{
     color: #000;
     font-family: 'Montserrat';
     text-align: center;
+    font-size: 1.15rem;
 }

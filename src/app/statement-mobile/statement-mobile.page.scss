@@ -28,13 +28,24 @@ ion-content{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
-    margin-top: 2rem;
+    width: 20%;
+}
+.logo ion-item{
+    --background: none;
+    background-color: #fff;
+    p{
+        margin-left: 1rem;
+        font-family: 'Poppins';
+        color: #000;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
 }
 .logo h3{
     color: #000;
     text-align: center;
     font-family: 'Montserrat';
+    font-size: 1.15rem;
 }
 .bil ion-card{
     --background: none;
@@ -94,7 +105,7 @@ ion-content{
         background-color: #0555B6;
         p{
             color: #fff;
-            font-size: 0.8rem;
+            font-size: 0.488rem;
         }
     }
     ion-card-content{
@@ -106,7 +117,7 @@ ion-content{
         }
         p{
             color: #000;
-            font-size: 0.8rem;
+            font-size: 0.5rem;
         }
     }
 }
